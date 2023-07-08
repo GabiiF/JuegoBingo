@@ -3,8 +3,6 @@ import { Typography } from '@mui/material';
 
 const WordList = ({ words }) => {
   const columnCount = 3; // Número de columnas deseado
-  const wordsPerColumn = Math.ceil(words.length / columnCount); // Cantidad de palabras por columna
-  const numeracion = 0;
 
   const gridTemplateColumns = `repeat(${columnCount}, 1fr)`;
 
