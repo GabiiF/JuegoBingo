@@ -8,7 +8,6 @@ const Game = () => {
   const [accumulatedWords, setAccumulatedWords] = useState([]);
   const [gameOver, setGameOver] = useState(false);
 
-
   const handleButtonClick = () => {
     if (words.length === 0) {
       // Si ya no quedan palabras en la lista, puedes reiniciar el juego o mostrar un mensaje de finalización.
