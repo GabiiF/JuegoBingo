@@ -9,7 +9,7 @@ body {
   background-image: url("../public/fondo.jpg");
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: center top;
+  background-position: center 80px;
   padding: 3em 3em 0em;
 }
 
