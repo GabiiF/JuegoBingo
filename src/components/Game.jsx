@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from './Button';
+import { Button, Typography } from '@mui/material';
 import WordList from './WordList';
 import palabras from '../Palabras';
 
@@ -35,14 +35,20 @@ const Game = () => {
 
   return (
     <div>
-       <Button onClick={handleButtonClick} disabled={gameOver} />
+        <Button variant="contained" onClick={handleButtonClick} disabled={gameOver}>
+        Sacar palabras
+      </Button>
       {gameOver ? (
-        <p>Juego terminado. Ya no quedan más palabras.</p>
+        <Typography variant="h6" gutterBottom>
+          Juego terminado. Ya no quedan más palabras.
+        </Typography>
       ) : (
         <WordList words={accumulatedWords} />
       )}
       {gameOver && (
-        <button onClick={restartGame}>Reiniciar juego</button>
+        <Button variant="outlined" onClick={restartGame}>
+          Reiniciar juego
+        </Button>
       )}
     </div>
   );
