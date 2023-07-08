@@ -6,6 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:#f4f4e8;
+  background-image: url("../public/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center top;
+  padding: 3em 3em 0em;
 }
 
 code {
